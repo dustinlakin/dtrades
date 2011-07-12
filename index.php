@@ -6,11 +6,6 @@
     </head>
     <body>
         <?php
-        
-        $mongo = new Mongo();
-        $collection = $mongo->selectDB("foo")->selectCollection("bar"); 
-        print_r($collection);
-
         ?>
     </body>
 </html>

@@ -1,0 +1,3 @@
+<?php
+    $mongo = new Mongo();
+?>

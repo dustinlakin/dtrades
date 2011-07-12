@@ -12,6 +12,14 @@ class user {
     public function getUser($id){
         
     }
+    
+    public function getFt() {
+        
+    }
+    
+    public function getIso(){
+        
+    }
 
 }
 
