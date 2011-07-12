@@ -10,7 +10,15 @@ class user {
     }
     
     public function getUser($id){
-        
+        $db = getMongo();
+        $cursor = $db->users->find(array("id"=>array('$lt'=>5)));
+        //print_r($collection);
+        /*$cursor = $collection->find(array("id"=>1));
+
+        // iterate through the results*/
+        foreach ($cursor as $obj) {
+            print_r($obj);
+        }
     }
     
     public function getFt() {
