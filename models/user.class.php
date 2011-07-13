@@ -11,14 +11,13 @@ class user {
     
     public function getUser($id){
         $db = getMongo();
-        $cursor = $db->users->find(array("id"=>array('$lt'=>5)));
-        //print_r($collection);
-        /*$cursor = $collection->find(array("id"=>1));
+        $cursor = (object)$db->users->findOne(array("id"=>5));
 
         // iterate through the results*/
-        foreach ($cursor as $obj) {
-            print_r($obj);
-        }
+        $this->id = $cursor->id;
+        $this->name = $cursor->name;
+        $this->email = $cursor->email;        
+        
     }
     
     public function getFt() {
@@ -27,6 +26,20 @@ class user {
     
     public function getIso(){
         
+    }
+    
+    public function createUser($usr){        
+        $db = getMongo();
+        $db->users->insert($usr);
+        /*
+        $doc = array( 
+        "type" => "ring",
+        "slot" => "ring",
+        "quality" => "rare",
+        "price" => 30,
+        "stats" => (object)array( "fcr" => 20, "gf" => 50) );
+         * 
+         */
     }
 
 }
