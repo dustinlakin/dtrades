@@ -4,7 +4,6 @@ require_once 'models/user.class.php';
 
 $method = $_GET["m"];
 
-
 switch ($method) {
     case "show":
         $id = $_GET["id"];

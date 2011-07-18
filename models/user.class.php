@@ -2,6 +2,7 @@
 class user {
 
     public $id,$name,$email,$ft,$iso;
+    private $salt = "asd5Asd9SDV1Bpd3114IujfPlklEqnmDoksl";
     
     function __construct($id=null) {
         if($id!=null){
@@ -16,8 +17,14 @@ class user {
         // iterate through the results*/
         $this->id = $cursor->id;
         $this->name = $cursor->name;
-        $this->email = $cursor->email;        
-        
+        $this->email = $cursor->email;
+    }
+    
+    public function login($name,$password){
+        $cursor = $db->users->findOne(array("name"=>$name,"password"=>  md5($password.$salt)));
+        if($cursor != NULL){
+            $_SESSION[id] = $cursor->id;
+        }
     }
     
     public function getFt() {
@@ -31,15 +38,6 @@ class user {
     public function createUser($usr){        
         $db = getMongo();
         $db->users->insert($usr);
-        /*
-        $doc = array( 
-        "type" => "ring",
-        "slot" => "ring",
-        "quality" => "rare",
-        "price" => 30,
-        "stats" => (object)array( "fcr" => 20, "gf" => 50) );
-         * 
-         */
     }
 
 }
