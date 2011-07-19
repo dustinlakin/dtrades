@@ -24,8 +24,16 @@
       }
       html += '</ul>';
       html += '</div>';
-      
       $this.after(html);
+      
+      //add onclicks
+      for(i in options.items){
+          console.log('#dropdown_'+$this.attr("id")+'_'+ options.items[i],$('#dropdown_'+$this.attr("id")+'_'+ options.items[i]));
+          $('#dropdown_'+$this.attr("id")+'_'+ options.items[i]).bind("click",function(event){
+             options.start = i;
+             $this.val(options.items[i]);
+          });
+      }
       
       $div = $("#dropdown_" + $(this).attr("id"));
       $div.addClass("dropdown").css("width",$this.css("width"));
@@ -68,18 +76,17 @@
       
       function refreshList(){
           options.start = 0;
-          $div.html("");
-          var html = '<ul>';
+          $('#dropdown_'+$this.attr("id")+' li').hide();
           for(var i = 0; i < currentList.length; i++){
-              html += '<li>' + currentList[i] + '</li>';
+            $('#dropdown_'+$this.attr("id")+'_'+currentList[i]).show();
+            console.log(currentList[i]);
           }
-          html += '</ul>';
-          $div.html(html);
       }
       
       function setMarked(){
           $div.children("ul").children("li").removeClass("selected");
-          $div.children("ul").children("li:nth-child("+(options.start + 1)+")").addClass("selected");
+          $('#dropdown_'+$this.attr("id")+'_'+currentList[options.start]).addClass("selected");
+          //$div.children("ul").children("li:nth-child("+(options.start + 1)+")").addClass("selected");
       }
 
     });
