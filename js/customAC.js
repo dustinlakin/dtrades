@@ -17,10 +17,10 @@
 
       var $this = $(this);
       //create the dropdown
-      var html = '<div id="dropdown_' + $(this).attr("id") + '">';
+      var html = '<div id="dropdown_' + $this.attr("id") + '">';
       html += '<ul>';
       for(i in options.items){
-          html += '<li>' + options.items[i] + '</li>';
+          html += '<li id="dropdown_'+$this.attr("id")+'_'+ options.items[i] +'">' + options.items[i] + '</li>';
       }
       html += '</ul>';
       html += '</div>';
@@ -30,13 +30,21 @@
       $div = $("#dropdown_" + $(this).attr("id"));
       $div.addClass("dropdown").css("width",$this.css("width"));
       
+      $this.bind("keydown",function(event){
+         if(event.keyCode == '38'){ //up
+            event.preventDefault();
+        }else if(event.keyCode == '40'){ //down
+            event.preventDefault();
+        } 
+      });
+      
       $this.bind("keyup",function(event) {
           $div.show();
           //enter
         if (event.keyCode == '13') {
             $this.val(currentList[options.start]);
             $div.hide();
-        }else if(event.keyCode == '38'){ //up
+        }else if(event.keyCode == '38'){ //up            
             if(currentList[options.start - 1]){
                 options.start--;
             }
@@ -73,8 +81,6 @@
           $div.children("ul").children("li").removeClass("selected");
           $div.children("ul").children("li:nth-child("+(options.start + 1)+")").addClass("selected");
       }
-
-      
 
     });
 
