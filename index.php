@@ -11,7 +11,9 @@
         </header>
         <section>
             <h1>In Search Of</h1>
-            <input id="iso" type="text" class="search"/>
+            <div id="slot" class="search">Slot</div>
+            <div id="type" class="search">Type</div>
+            <div id="quality" class="search">Quality</div>
             <br/>
         </section>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>

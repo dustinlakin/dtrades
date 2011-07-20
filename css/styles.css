@@ -34,27 +34,36 @@ div.name{
     float: right;
 }
 
-input.search{
-    width:300px;
+div.search{
+    width:150px;
     height:30px;
     font-size: 20px;
     line-height: 30px;
     font-family: arial, helvetica, san-serif;
     color:white;
     background: #1a1a1a;
-    border:1px solid white;
+    text-align: center;
+    border:1px white dashed;
 }
 
 section{
-    margin-top:30px;
+    width:800px;
+    margin:40px auto;
 }
 
 ul{
     padding:0px;
+    margin:0px;
 }
 
 .dropdown li{
+    cursor: pointer;
     list-style: none;
+    padding-left: 15px;
+}
+
+.dropdown li:hover{
+    background: gray;
 }
 
 .dropdown{
