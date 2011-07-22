@@ -1,0 +1,57 @@
+{
+    "slots": [
+        "Amulet",
+        "Belt",
+        "Boots",
+        "Charm",
+        "Chest",
+        "Gloves",
+        "Helm",
+        "Jewel",
+        "Ring",
+        "Rune",
+        "Sheild",
+        "Weapon"
+    ],
+    
+    "types" : {
+        "Charm": [
+            {"name": "Small Charm"},
+            {"name": "Large Charm"},
+            {"name": "Grand Charm"}
+        ],
+        "Amulet": [
+            {"name": "Amulet"}
+        ],
+        "Ring": [
+            {"name": "Ring"}
+        ],
+        "Jewel": [
+            {"name": "Jewel"}
+        ],
+        "Rune": [
+            {"name": "Rune"}
+        ],
+        "Belt": [
+            {"name": "Sash"},
+            {"name": "Light Belt"},
+            {"name": "Belt"},
+            {"name": "Heavy Belt"},
+            {"name": "Plated Belt"},
+            {"name": "Demonhide Sash"},
+            {"name": "Sharkskin Belt"},
+            {"name": "Mesh Belt"},
+            {"name": "Battle Belt"},
+            {"name": "War Belt"},
+            {"name": "Spiderweb Sash"},
+            {"name": "Vampirefang Belt"},
+            {"name": "Mithril Coil"},
+            {"name": "Troll Belt"},
+            {"name": "Colossus Girdle"}
+        ]
+        
+        
+        
+        
+    }
+}

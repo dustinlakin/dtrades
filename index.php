@@ -9,15 +9,28 @@
         <header>
             <div class="title">diablotrad.es</div><div class="name">Lakk</div>
         </header>
-        <section>
-            <h1>In Search Of</h1>
+        <section id="item">
+            <h1>Item Builder</h1>
             <div id="slot" class="search">Slot</div>
+            <div id="slot_dropdown" class="dropdown">
+            </div>
             <div id="type" class="search">Type</div>
+            <div id="type_dropdown" class="dropdown">
+                <ul>
+                    
+                </ul>
+            </div>
             <div id="quality" class="search">Quality</div>
+            <div id="quality_dropdown">
+                
+            </div>
             <br/>
         </section>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
         <script type="text/javascript" src="js/customAC.js" ></script>
         <script type="text/javascript" src="js/main.js" ></script>
+        <script type="text/javascript">
+            var info;
+        </script>
     </body>
 </html>

@@ -1,46 +1,61 @@
-
-
-function setupList(jQ,callback){
-    var $this = jQ;
-    var items = $this.data("items");
-    //create the dropdown
-    var html = '<div id="dropdown_' + $this.attr("id") + '">';
-    html += '<ul>';
-    for(i in items){
-        html += '<li id="dropdown_'+$this.attr("id")+'_'+ items[i].replace(" ","_") +'">' + items[i] + '</li>';
+function setupSlots(){
+    slots = info.slots;
+    html = '<ul>';
+    for(var i =0; i < slots.length; i++){
+        html += '<li id="slot_'+ slots[i] +'">' + slots[i] + '</li>'
     }
     html += '</ul>';
-    html += '</div>';
-    $this.after(html);
-    $div = $("#dropdown_" + $this.attr("id"));
-    $div.addClass("dropdown").css("width",$this.css("width")).hide();
-
-    //add onclicks
-    for(i in items){
-        $('#dropdown_'+$this.attr("id")+'_'+ items[i].replace(" ","_")).bind("click",function(event){
-            $this.html($(this).html());
-            callback($(this).html());
-            $div.slideUp();
-        });
-    }
-
-    $this.bind("click",function(event){
-        if($div.is(":hidden")){
-            $div.slideDown();
-        }else{
-            $div.slideUp();
-        }
-    })
-    console.log($this.data("items"))
+    $("#slot_dropdown").append(html);
+    $("#slot").bind("click",function(){
+        toggleDropdown($("#slot_dropdown"))
+    });
+    
+    //setup clicks
+    $("#slot_dropdown").css("width",$("#slot").css("width"));
+    $("#slot_dropdown li").each(function(){
+       $(this).click(function(){
+           $("#slot").html($(this).html());
+           $("#item").data("slot",$(this).html());
+           toggleDropdown($("#slot_dropdown"));
+           showType($(this).html());
+       }) 
+    });
 }
 
-function initializeType(slot){
+function toggleDropdown(jQ){
+   if($(jQ).is(":visible")){
+       $(jQ).slideUp();
+   }else{
+       $(jQ).slideDown();
+   }
+}
+
+function showType(slot){
     console.log(slot);
+    var choices = info.types[slot];
+    for(var i = 0; i<choices.length; i++){
+        $("#type_dropdown ul").append('<li id="'+ choices[i].name.replace(" ", "_") +'">'+ choices[i].name +'</li>')
+        //console.log(choices[i].name, choices.length);
+    }
+    $("#type").bind("click",function(){
+        toggleDropdown($("#type_dropdown"))
+    });
+    $("#type_dropdown").css("width",$("#type").css("width"));
+    $("#type_dropdown li").each(function(){
+        $(this).click(function(){
+            $("#type").html($(this).html());
+            $("#item").data("type",$(this).html());
+            toggleDropdown($("#type_dropdown"));
+        })
+    })
+    
 }
 
 $(document).ready(function(){
-    $("#slot").data("items", ["Amulet","Belt","Boots","Charm","Chest","Gloves","Helm","Jewel","Ring","Rune","Sheild","Weapon"]);
-    setupList($("#slot"),initializeType);
+    $.getJSON("json/itemInfo.json",function(data){
+        info = data;
+        setupSlots();
+    });
 });
 
 
