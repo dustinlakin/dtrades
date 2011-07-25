@@ -13,6 +13,14 @@ header{
     border-bottom: 1px solid white;
 }
 
+.sectionTitle{
+    color:white;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: normal;
+}
+
 div.title{
     color:white;
     font-family: 'Lobster', cursive;
@@ -49,51 +57,68 @@ div.search{
 
 section{
     width:800px;
-    margin:40px auto;
+    margin:10px auto;
 }
 
 
-#quality div{
+div.qualHolder{
     position: relative;
     float:left;
     width:40px;
     height:40px;
     border: 1px solid white;
     margin: 0px 3px;
-    -moz-border-top-left-radius: 10px;
-    border-top-left-radius: 10px;
-    -moz-border-bottom-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    -moz-border-top-left-radius: 12px;
+    border-top-left-radius: 12px;
+    -moz-border-bottom-right-radius: 12px;
+    border-bottom-right-radius: 12px;
     font-family: 'Lobster', cursive;
     font-size: 30px;
     line-height: 40px;
     text-align: center;
+    cursor: pointer;
+    opacity:.90;
 }
 
-#quality span{
-    color: black;
-    opacity: .1;
+div.qualHolder:hover{
+    opacity:1;
+}
+
+.qualLetter{
+    color:black;
+    width: 100%;
+    opacity: .25;
+}
+
+.qualLetter:hover{
+    color:black;
+    width: 100%;
+    opacity: .75;
 }
 
 #White{
     background: white;
 }
 #Blue{
-    background: blue;
+    background: #7ea5ff;
 }
 
 #Yellow{
-    background: yellow;
+    background: #f0ff00;
 }
 
 #Green{
-    background: green;
+    background: #00ff2a;
 }
 
 #Gold{
-    background: gold;
+    background: #ffe25d;
 }
 
 #Orange{
-    background: orange;
+    background: #ffb400;
+}
+
+#Gray{
+    background: #dadada;
 }

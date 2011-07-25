@@ -54,16 +54,18 @@ function showType(slot){
 $(document).ready(function(){
     $.getJSON("json/itemInfo.json",function(data){
         info = data;
-        var html = '<option value=""></option>';
-        for(var i = 0; i < info.slots.length; i++){
-            html += '<option value="'+ info.slots[i]+'">'+info.slots[i]+'</option>';
-        }
-        $("#itemSelect").html(html);
-        $(".chzn-select").chosen();
         
     });
 });
 
+function step2(){
+    var html = '<option value=""></option>';
+    for(var i = 0; i < info.slots.length; i++){
+        html += '<option value="'+ info.slots[i]+'">'+info.slots[i]+'</option>';
+    }
+    $("#itemSelect").html(html);
+    $("#itemSelect").chosen();
+}
 
 
 

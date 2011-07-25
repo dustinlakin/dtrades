@@ -57,17 +57,33 @@
             <div class="title">diablotrad.es</div><div class="name">Lakk</div>
         </header>
         <section id="item">
-            <h1>Select Quality</h1>
+            <div class="sectionTitle">Select Quality</div>
             <section id="quality">
-                <div id="White"><span>N</span></div>
-                <div id="Blue"><span>M</span></div>
-                <div id="Yellow"><span>R</span></div>
-                <div id="Green"><span>S</span></div>
-                <div id="Gold"><span>U</span></div>
-                <div id="Orange"><span>C</span></div>
+                <div id="White" class="qualHolder">
+                    <div class="qualLetter">N</div>
+                </div>
+                <div id="Blue" class="qualHolder">
+                    <div class="qualLetter">M</div>
+                </div>
+                <div id="Yellow" class="qualHolder">
+                    <div class="qualLetter">R</div>
+                </div>
+                <div id="Green" class="qualHolder">
+                    <div class="qualLetter">S
+                    </div>
+                </div>
+                <div id="Gold" class="qualHolder">
+                    <div class="qualLetter">U</div>
+                </div>
+                <div id="Orange" class="qualHolder">
+                    <div class="qualLetter">C</div>
+                </div>
+                <div id="Gray" class="qualHolder">
+                    <div class="qualLetter">W</div>
+                </div>
             </section>
             <br style="clear:both;"/><br style="clear:both;"/>
-                <select id="itemSelect" title="Choose an item type..." style="width:285px;" class="chzn-select">
+                <select id="itemSelect" title="Choose an item type..." style="width:335px;" class="chzn-select">
                     <option value=""></option>
                     <option value="1">test1</option>
                     <option value="2">test2</option>
