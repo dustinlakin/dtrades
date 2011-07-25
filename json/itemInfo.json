@@ -1,10 +1,399 @@
 {
+    "stats" : [
+      {
+          "id": 0,
+          "name": "Attack Rating",
+          "shortName": "AR"
+      },
+      {
+          "id": 1,
+          "name": "% Attack Rating Based On Level",
+          "shortName": "%AR (bol)"
+      },
+      {
+          "id": 2,
+          "name": "Attack Rating Based On Level",
+          "shortName": "AR (bol)"
+      },
+      {
+          "id": 3,
+          "name": "% Enhanced Damage",
+          "shortName": "%ED"
+      },
+      {
+          "id": 4,
+          "name": "% Defense",
+          "shortName": "%ED"
+      },
+      {
+          "id": 5,
+          "name": "Mana",
+          "shortName": "Mana"
+      },
+      {
+          "id": 6,
+          "name": "Mana Based On Level",
+          "shortName": "Mana (bol)"
+      },
+      {
+          "id": 7,
+          "name": "Light Radius",
+          "shortName": ""
+      },
+      {
+          "id": 8,
+          "name": "Defense Based On Level",
+          "shortName": ""
+      },
+      {
+          "id": 9,
+          "name": "% Fire Resist",
+          "shortName": "%FR"
+      },
+      {
+          "id": 10,
+          "name": "% Cold Resist",
+          "shortName": "%CR"
+      },
+      {
+          "id": 11,
+          "name": "% Lightning Resist",
+          "shortName": "%LR"
+      },
+      {
+          "id": 12,
+          "name": "% Poison Resist",
+          "shortName": "%PR"
+      },
+      {
+          "id": 13,
+          "name": "% Resist All",
+          "shortName": "%RA"
+      },
+      {
+          "id": 14,
+          "name": "Amazon Skills",
+          "shortName": "Amaz Skills"
+      },
+      {
+          "id": 15,
+          "name": "Barbarian Skills",
+          "shortName": "Barb Skills"
+      },
+      {
+          "id": 16,
+          "name": "Paladin Skills",
+          "shortName": "Pala Skills"
+      },
+      {
+          "id": 17,
+          "name": "Necromancer Skills",
+          "shortName": "Necro Skills"
+      },
+      {
+          "id": 18,
+          "name": "Sorceress Skills",
+          "shortName": "Sorc Skills"
+      },
+      {
+          "id": 19,
+          "name": "Assassin Skills",
+          "shortName": "Assn Skills"
+      },
+      {
+          "id": 20,
+          "name": "Amazon Bow Skills",
+          "shortName": "Amazon Bow"
+      },
+      {
+          "id": 21,
+          "name": "Amazon Passive Skills",
+          "shortName": "Amazon Passive"
+      },
+      {
+          "id": 22,
+          "name": "Amazon Javelin Skills",
+          "shortName": "Amazon Java"
+      },
+      {
+          "id": 23,
+          "name": "Sorceress Fire Skills",
+          "shortName": "Sorc Fire"
+      },
+      {
+          "id": 24,
+          "name": "Sorceress Lightning Skills",
+          "shortName": "Sorc Light"
+      },
+      {
+          "id": 25,
+          "name": "Sorceress Cold Skills",
+          "shortName": "Sorc Cold"
+      },
+      {
+          "id": 26,
+          "name": "Necromancer Posion & Bone Skills",
+          "shortName": "Necro P&B"
+      },
+      {
+          "id": 27,
+          "name": "Necromancer Curses Skills",
+          "shortName": "Necro Curses"
+      },
+      {
+          "id": 28,
+          "name": "Necromancer Summoning Skills",
+          "shortName": "Necro Summoning"
+      },
+      {
+          "id": 29,
+          "name": "Paladin Combat Skills",
+          "shortName": "Pala Combat"
+      },
+      {
+          "id": 30,
+          "name": "Paladin Offensive Aura Skills",
+          "shortName": "Pala Offensive"
+      },
+      {
+          "id": 31,
+          "name": "Paladin Defensive Aura Skills",
+          "shortName": "Pala Defensive"
+      },
+      {
+          "id": 32,
+          "name": "Barbarian Combat Skills",
+          "shortName": "Barb Combat"
+      },
+      {
+          "id": 33,
+          "name": "Barbarian Masteries Skills",
+          "shortName": "Barb Masteries"
+      },
+      {
+          "id": 34,
+          "name": "Barbarian Warcry Skills",
+          "shortName": "Barb Warcry"
+      },
+      {
+          "id": 35,
+          "name": "Druid Summoning Skills",
+          "shortName": "Druid Summoning"
+      },
+      {
+          "id": 36,
+          "name": "Druid Shapeshifting Skills",
+          "shortName": "Druid Shapeshifting"
+      },
+      {
+          "id": 37,
+          "name": "Druid Elemental Skills",
+          "shortName": "Druid Elemental"
+      },
+      {
+          "id": 38,
+          "name": "Assassin Trap Skills",
+          "shortName": "Assassin Trap"
+      },
+      {
+          "id": 39,
+          "name": "Assassin Shadow Skills",
+          "shortName": "Assassin Shadow"
+      },
+      {
+          "id": 40,
+          "name": "Assassin Martial Arts",
+          "shortName": "Assassin Martial"
+      },
+      {
+          "id": 41,
+          "name": "% Damage taken Goes to Mana",
+          "shortName": "% Damage taken to Mana"
+      },
+      {
+          "id": 42,
+          "name": "Mana After Each Kills",
+          "shortName": "Mana after Kill"
+      },
+      {
+          "id": 43,
+          "name": "% Magic Find",
+          "shortName": "%MF"
+      },
+      {
+          "id": 44,
+          "name": "Max Stamina",
+          "shortName": "Max Stamina"
+      },
+      {
+          "id": 45,
+          "name": "% Heal Stamina",
+          "shortName": "% Heal Stamina"
+      },
+      {
+          "id": 46,
+          "name": "% Hit Causes Monster to Flee",
+          "shortName": "%Monster Flee"
+      },
+      {
+          "id": 47,
+          "name": "Sockets",
+          "shortName": "Socs"
+      },
+      {
+          "id": 48,
+          "name": "",
+          "shortName": ""
+      },
+      {
+          "id": 49,
+          "name": "Strength",
+          "shortName": "Str"
+      },
+      {
+          "id": 50,
+          "name": "Dexterity",
+          "shortName": "Dex"
+      },
+      {
+          "id": 51,
+          "name": "Energy",
+          "shortName": "Energy"
+      },
+      {
+          "id": 52,
+          "name": "Life",
+          "shortName": "Life"
+      },
+      {
+          "id": 53,
+          "name": "Minimum Damage",
+          "shortName": "Min Dmg"
+      },
+      {
+          "id": 54,
+          "name": "Maximum Damage",
+          "shortName": "Max Dmg"
+      },
+      {
+          "id": 55,
+          "name": "% Poison Length Reduced",
+          "shortName": "%Poison Length"
+      },
+      {
+          "id": 56,
+          "name": "% Life Stolen Per Hit",
+          "shortName": "%Life Steal"
+      },
+      {
+          "id": 57,
+          "name": "% Mana Stolen Per Hit",
+          "shortName": "%Mana Steal"
+      },
+      {
+          "id": 58,
+          "name": "Replenish Life",
+          "shortName": "Replenish Life"
+      },
+      {
+          "id": 59,
+          "name": "% Increased Attack Speed",
+          "shortName": "%IAS"
+      },
+      {
+          "id": 60,
+          "name": "% Increased Blocking",
+          "shortName": "%IB"
+      },
+      {
+          "id": 61,
+          "name": "% Faster Block Rate",
+          "shortName": "%FBR"
+      },
+      {
+          "id": 62,
+          "name": "% Faster Hit Recovery",
+          "shortName": "%FHR"
+      },
+      {
+          "id": 63,
+          "name": "% Extra Gold From Monsters",
+          "shortName": "%GF"
+      },
+      {
+          "id": 64,
+          "name": "% Faster Cast Rate",
+          "shortName": "%FCR"
+      },
+      {
+          "id": 65,
+          "name": "-% Requirements",
+          "shortName": "-%Req"
+      },
+      {
+          "id": 66,
+          "name": "% Faster Run/Walk",
+          "shortName": "%FRW"
+      },
+      {
+          "id": 67,
+          "name": "Knockback",
+          "shortName": "KB"
+      },
+      {
+          "id": 68,
+          "name": "Ignores Target's Defence",
+          "shortName": "Ignore Defense"
+      },
+      {
+          "id": 69,
+          "name": "Prevent Monster Heal",
+          "shortName": "Prevent Monster Heal"
+      },
+      {
+          "id": 70,
+          "name": "Half Freeze Duration",
+          "shortName": "Half Freeze Duration"
+      },
+      {
+          "id": 71,
+          "name": "Repair Durability",
+          "shortName": "Self Repair"
+      },
+      {
+          "id": 72,
+          "name": "Indestructible",
+          "shortName": "Indestructible"
+      },
+      {
+          "id": 73,
+          "name": "Replenish Quantity",
+          "shortName": "Replenish Quantity"
+      },
+      {
+          "id": 74,
+          "name": "Life Based on Level",
+          "shortName": "Life (bol)"
+      },
+      {
+          "id": 75,
+          "name": "Mana Based on Level",
+          "shortName": "Mana (bol)"
+      },
+      {
+          "id": 76,
+          "name": "Unidentified",
+          "shortName": "Unided"
+      }
+    ],
+    
     "slots": [
         "Armor",
         "Amulet",
         "Belt",
         "Boots",
         "Charm",
+        "Gem",
         "Gloves",
         "Helm",
         "Jewel",
@@ -21,13 +410,41 @@
             {"name": "Grand Charm"}
         ],
         "Amulet": [
-            {"name": "Amulet"}
+            {
+                "name": "Amulet",
+                "uniques" : [
+                    {"name": ""},
+                    {"name": ""},
+                    {"name": ""},
+                    {"name": ""},
+                    {"name": ""},
+                    {"name": ""},
+                ]
+            }
         ],
         "Ring": [
-            {"name": "Ring"}
+            {
+                "name": "Ring",
+                "uniques": [
+                    {"name": "Stone of Jordan"},
+                    {"name": "Nagelring"},
+                    {"name": "Manald Heal"},
+                    {"name": "Dwarf Star"},
+                    {"name": "Raven Frost"},
+                    {"name": "Bul-Kathos' Wedding Band"},
+                    {"name": "Carrion Wind"},
+                    {"name": "Nature's Peace"},
+                    {"name": "Wisp Projector"}
+                ]
+            }
         ],
         "Jewel": [
-            {"name": "Jewel"}
+            {
+                "name": "Jewel",
+                "uniques":[
+                    {"name": "Rainbow Facet"}
+                ]
+            }
         ],
         "Rune": [
             {"name": "Rune"}
@@ -38,11 +455,13 @@
             {"name": "Belt"},
             {"name": "Heavy Belt"},
             {"name": "Plated Belt"},
+            
             {"name": "Demonhide Sash"},
             {"name": "Sharkskin Belt"},
             {"name": "Mesh Belt"},
             {"name": "Battle Belt"},
             {"name": "War Belt"},
+            
             {"name": "Spiderweb Sash"},
             {"name": "Vampirefang Belt"},
             {"name": "Mithril Coil"},
@@ -55,11 +474,13 @@
             {"name": "Chain Boots"},
             {"name": "Light Plated Boots"},
             {"name": "Greaves"},
+            
             {"name": "Demonhide Boots"},
             {"name": "Sharkskin Boots"},
             {"name": "Mesh Boots"},
             {"name": "Battle Boots"},
             {"name": "War Boots"},
+            
             {"name": "Wyrmhide Boots"},
             {"name": "Scarabshell Boots"},
             {"name": "Boneweave Boots"},
@@ -115,6 +536,15 @@
             {"name": "Shadow Plate"},
             {"name": "Sacred Armor"}
         ],
+        "Gem":[
+            "Amethyst",
+            "Diamond",
+            "Emerald",
+            "Ruby",
+            "Sapphire",
+            "Skull",
+            "Topaz"
+        ],
         "Gloves": [
             {"name": "Leather Gloves"},
             {"name": "Heavy Gloves"},
@@ -160,8 +590,45 @@
             {"name": "Spired Helm"},
             {"name": "Demonhead"},
             {"name": "Corona"},
-            {"name": "Bone Visage"}
+            {"name": "Bone Visage"},
+            
+            {"name": "Jawbone Cap"},
+            {"name": "Fanged Helm"},
+            {"name": "Horned Helm"},
+            {"name": "Assault Helmet"},
+            {"name": "Avenger Guard"},
+            
+            {"name": "Jawbone Visor"},
+            {"name": "Lion Helm"},
+            {"name": "Rage Mask"},
+            {"name": "Savage Helmet"},
+            {"name": "Slayer Guard"},
+            
+            {"name": "Carnage Helm"},
+            {"name": "Fury Visor"},
+            {"name": "Destroyer Helm"},
+            {"name": "Conqueror Crown"},
+            {"name": "Guardian Crown"},
+            
+            {"name": "Wolf Head"},
+            {"name": "Hawk Helm"},
+            {"name": "Antlers"},
+            {"name": "Falcon Mask"},
+            {"name": "Spirit Mask"},
+            
+            {"name": "Alpha Helm"},
+            {"name": "Griffon Headdress"},
+            {"name": "Hunter's Guise"},
+            {"name": "Sacred Feathers"},
+            {"name": "Totemic Mask"},
+            
+            {"name": "Blood Spirit"},
+            {"name": "Sun Spirit"},
+            {"name": "Earth Spirit"},
+            {"name": "Sky Spirit"},
+            {"name": "Dream Spirit"}
         ],
+        
         "Shields": [
             {"name": "Buckler"},
             {"name": "Small Shield"},
@@ -188,119 +655,449 @@
             {"name": "Blade Barrier"},
             {"name": "Aegis"},
             {"name": "Troll Nest"},
-            {"name": "Ward"}
+            {"name": "Ward"},
+            
+            {"name": "Targe"},
+            {"name": "Rondache"},
+            {"name": "Heraldic Shield"},
+            {"name": "Aerin Shield"},
+            {"name": "Crown Shield"},
+            
+            {"name": "Akaran Targe"},
+            {"name": "Akaran Rondache"},
+            {"name": "Protector Shield"},
+            {"name": "Gilded Shield"},
+            {"name": "Royal Shield"},
+            
+            {"name": "Sacred Targe"},
+            {"name": "Sacred Rondache"},
+            {"name": "Kurast Shield"},
+            {"name": "Zakarum Shield"},
+            {"name": "Vortex Shield"},
+            
+            {"name": "Preserved Head"},
+            {"name": "Zombie Head"},
+            {"name": "Unraveller Head"},
+            {"name": "Gargoyle Head"},
+            {"name": "Demon Head"},
+            
+            {"name": "Mummified Trophy"},
+            {"name": "Fetish Trophy"},
+            {"name": "Sexton Trophy"},
+            {"name": "Cantor Trophy"},
+            {"name": "Hierophant Trophy"},
+            
+            {"name": "Minion Skull"},
+            {"name": "Hellspawn Skull"},
+            {"name": "Overseer Skull"},
+            {"name": "Succubus Skull"},
+            {"name": "Bloodlord Skull"}
         ],
-        
-        "Weapons": [
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            {"name": ""},
-            
-            
-        ]
-        
-        
-        
-        
-        
+        "Runes":[
+            "El",
+            "Eld",
+            "Tir",
+            "Nef",
+            "Eth",
+            "Ith",
+            "Tal",
+            "Ral",
+            "Ort",
+            "Thul",
+            "Amn",
+            "Sol",
+            "Shael",
+            "Dol",
+            "Hel",
+            "Io",
+            "Lum",
+            "Ko",
+            "Fal",
+            "Lem",
+            "Pul",
+            "Um",
+            "Mal",
+            "Ist",
+            "Gul",
+            "Vex",
+            "Ohm",
+            "Lo",
+            "Sur",
+            "Ber",
+            "Jah",
+            "Cham",
+            "Zod"
+        ],
+        "Weapons": {
+            "Axes" :
+            [
+                {"name": "Hand Axe"},
+                {"name": "Axe"},
+                {"name": "Double Axe"},
+                {"name": "Military Pick"},
+                {"name": "War Axe"},
+                {"name": "Large Axe"},
+                {"name": "Broad Axe"},
+                {"name": "Battle Axe"},
+                {"name": "Great Axe"},
+                {"name": "Giant Axe"},
+                
+                {"name": "Hatchet"},
+                {"name": "Cleaver"},
+                {"name": "Twin Axe"},
+                {"name": "Crowbill"},
+                {"name": "Naga"},
+                {"name": "Military Axe"},
+                {"name": "Bearded Axe"},
+                {"name": "Tabar"},
+                {"name": "Gothic Axe"},
+                {"name": "Ancient Axe"},
+                
+                {"name": "Tomahawk"},
+                {"name": "Small Crescent"},
+                {"name": "Ettin Axe"},
+                {"name": "War Spike"},
+                {"name": "Berserker Axe"},
+                {"name": "Feral Axe"},
+                {"name": "Silver-Edged Axe"},
+                {"name": "Decapitator"},
+                {"name": "Champion Axe"},
+                {"name": "Glorious Axe"}
+            ],
+            "Bows":[
+                {"name": "Short Bow"},
+                {"name": "Hunter's Bow"},
+                {"name": "Long Bow"},
+                {"name": "Composite Bow"},
+                {"name": "Short Battle Bow"},
+                {"name": "Long Battle Bow"},
+                {"name": "Short War Bow"},
+                {"name": "Long War Bow"},
+                
+                {"name": "Edge Bow"},
+                {"name": "Razor Bow"},
+                {"name": "Cedar Bow"},
+                {"name": "Double Bow"},
+                {"name": "Short Siege Bow"},
+                {"name": "Large Siege Bow"},
+                {"name": "Rune Bow"},
+                {"name": "Gothic Bow"},
+                
+                {"name": "Spider Bow"},
+                {"name": "Blade Bow"},
+                {"name": "Shadow Bow"},
+                {"name": "Great Bow"},
+                {"name": "Diamond Bow"},
+                {"name": "Crusader Bow"},
+                {"name": "Ward Bow"},
+                {"name": "Hydra Bow"},
+                
+                {"name": "Stag Bow"},
+                {"name": "Reflex Bow"},
+                
+                {"name": "Ashwood Bow"},
+                {"name": "Ceremonial Bow"},
+                
+                {"name": "Matriarchal Bow"},
+                {"name": "Grand Matron Bow"},
+            ],
+            "CrossBows":[
+                {"name": "Light Crossbow"},
+                {"name": "Crossbow"},
+                {"name": "Heavy Crossbow"},
+                {"name": "Repeating Crossbow"},
+                
+                {"name": "Arbalest"},
+                {"name": "Siege Crossbow"},
+                {"name": "Ballista"},
+                {"name": "Chu-Ko-Nu"},
+                
+                {"name": "Pellet Bow"},
+                {"name": "Gorgon Crossbow"},
+                {"name": "Colossus Crossbow"},
+                {"name": "Demon Crossbow"},
+            ],
+            "Daggers":[
+                {"name": "Dagger"},
+                {"name": "Dirk"},
+                {"name": "Kris"},
+                {"name": "Blade"},
+                
+                {"name": "Poignard"},
+                {"name": "Rondel"},
+                {"name": "Cinquedeas"},
+                {"name": "Stiletto"},
+                
+                {"name": "Bone Knife"},
+                {"name": "Mithril Point"},
+                {"name": "Fanged Knife"},
+                {"name": "Legend Spike"}
+            ],
+            "Javelins":[
+                {"name": "Javelin"},
+                {"name": "Pilum"},
+                {"name": "Short Spear"},
+                {"name": "Glaive"},
+                {"name": "Throwing Spear"},
+                
+                {"name": "War Javelin"},
+                {"name": "Great Pilum"},
+                {"name": "Simbilan"},
+                {"name": "Spiculum"},
+                {"name": "Harpoon"},
+                
+                {"name": "Hyperion Javelin"},
+                {"name": "Stygian Pilum"},
+                {"name": "Balrog Spear"},
+                {"name": "Ghost Glaive"},
+                {"name": "Winged Harpoon"},
+                
+                {"name": "Maiden Javelin"},
+                {"name": "Ceremonial Javelin"},
+                {"name": "Matriarchal Javelin"}
+            ],
+            "Katars":[
+                {"name": "Katar"},
+                {"name": "Wrist Blade"},
+                {"name": "Hatchet Hands"},
+                {"name": "Cestus"},
+                {"name": "Claws"},
+                {"name": "Blade Talons"},
+                {"name": "Scissors Katar"},
+                
+                {"name": "Quhab"},
+                {"name": "Wrist Spike"},
+                {"name": "Fascia"},
+                {"name": "Hand Scythe"},
+                {"name": "Greater Claws"},
+                {"name": "Greater Talons"},
+                {"name": "Scissors Quhab"},
+                
+                {"name": "Suwayyah"},
+                {"name": "Wrist Sword"},
+                {"name": "War Fist"},
+                {"name": "Battle Cestus"},
+                {"name": "Feral Claws"},
+                {"name": "Runic Talons"},
+                {"name": "Scissors Suwayyah"}  
+            ],
+            "Maces":[
+                {"name": "Club"},
+                {"name": "Spiked Club"},
+                {"name": "Mace"},
+                {"name": "Morning Star"},
+                {"name": "Flail"},
+                {"name": "War Hammer"},
+                {"name": "Maul"},
+                {"name": "Great Maul"},
+                
+                {"name": "Cudgel"},
+                {"name": "Barbed Club"},
+                {"name": "Flanged Mace"},
+                {"name": "Jagged Star"},
+                {"name": "Knout"},
+                {"name": "Battle Hammer"},
+                {"name": "War Club"},
+                {"name": "Martel de Fer"},
+                
+                {"name": "Truncheon"},
+                {"name": "Tyrant Club"},
+                {"name": "Reinforced Mace"},
+                {"name": "Devil Star"},
+                {"name": "Scourge"},
+                {"name": "Legendary Mallet"},
+                {"name": "Ogre Maul"},
+                {"name": "Thunder Maul"}
+            ],
+            "Orbs":[
+                {"name": "Eagle Orb"},
+                {"name": "Sacred Globe"},
+                {"name": "Smoked Sphere"},
+                {"name": "Clasped Orb"},
+                {"name": "Jared's Stone"},
+                
+                {"name": "Glowing Orb"},
+                {"name": "Crystalline Globe"},
+                {"name": "Cloudy Sphere"},
+                {"name": "Sparkling Ball"},
+                {"name": "Swirling Crystal"},
+                
+                {"name": "Heavenly Stone"},
+                {"name": "Eldritch Orb"},
+                {"name": "Demon Heart"},
+                {"name": "Vortex Orb"},
+                {"name": "Dimensional Shard"}
+            ],
+            "Polearms":[
+                {"name": "Bardiche"},
+                {"name": "Voulge"},
+                {"name": "Scythe"},
+                {"name": "Poleaxe"},
+                {"name": "Halberd"},
+                {"name": "War Scythe"},
+                
+                {"name": "Lochaber Axe"},
+                {"name": "Bill"},
+                {"name": "Battle Scythe"},
+                {"name": "Partizan"},
+                {"name": "Bec-De-Corbin"},
+                {"name": "Grim Scythe"},
+                
+                {"name": "Ogre Axe"},
+                {"name": "Colossus Voulge"},
+                {"name": "Thresher"},
+                {"name": "Cryptic Axe"},
+                {"name": "Great Poleaxe"},
+                {"name": "Giant Thresher"}
+            ],
+            "Scepters":[
+                {"name": "Scepter"},
+                {"name": "Grand Scepter"},
+                {"name": "War Scepter"},
+                
+                {"name": "Rune Scepter"},
+                {"name": "Holy Water Sprinkler"},
+                {"name": "Divine Scepter"},
+                
+                {"name": "Mighty Scepter"},
+                {"name": "Seraph Rod"},
+                {"name": "Caduceus"}
+            ],
+            "Spears":[
+                {"name": "Spear"},
+                {"name": "Trident"},
+                {"name": "Brandistock"},
+                {"name": "Spetum"},
+                {"name": "Pike"},
+                
+                {"name": "War Spear"},
+                {"name": "Fuscina"},
+                {"name": "War Fork"},
+                {"name": "Yari"},
+                {"name": "Lance"},
+                
+                {"name": "Hyperion Spear"},
+                {"name": "Stygian Pike"},
+                {"name": "Mancatcher"},
+                {"name": "Ghost Spear"},
+                {"name": "War Pike"},
+                
+                {"name": "Maiden Spear"},
+                {"name": "Maiden Pike"},
+                
+                {"name": "Ceremonial Spear"},
+                {"name": "Ceremonial Pike"},
+                
+                {"name": "Matriarchal Spear"},
+                {"name": "Matriarchal Pike"},
+                
+                {"name": ""},
+                {"name": ""},
+                {"name": ""},
+                {"name": ""},
+                {"name": ""},
+                {"name": ""},
+                {"name": ""},
+                {"name": ""},
+                {"name": ""}
+            ],
+            "Staves": [
+                {"name": "Short Staff"},
+                {"name": "Long Staff"},
+                {"name": "Gnarled Staff"},
+                {"name": "Battle Staff"},
+                {"name": "War Staff"},
+                
+                {"name": "Jo Staff"},
+                {"name": "Quarterstaff"},
+                {"name": "Cedar Staff"},
+                {"name": "Gothic Staff"},
+                {"name": "Rune Staff"},
+                
+                {"name": "Walking Stick"},
+                {"name": "Stalagmite"},
+                {"name": "Elder Staff"},
+                {"name": "Shillelagh"},
+                {"name": "Archon Staff"},
+            ],
+            "Swords":[
+                {"name": "Short Sword"},
+                {"name": "Scimitar"},
+                {"name": "Sabre"},
+                {"name": "Falchion"},
+                {"name": "Crystal Sword"},
+                {"name": "Broad Sword"},
+                {"name": "Long Sword"},
+                {"name": "War Sword"},
+                {"name": "Two-handed Sword"},
+                {"name": "Claymore"},
+                {"name": "Giant Sword"},
+                {"name": "Bastard Sword"},
+                {"name": "Flamberge"},
+                {"name": "Great Sword"},
+                
+                {"name": "Gladius"},
+                {"name": "Cutlass"},
+                {"name": "Cutlass"},
+                {"name": "Tulwar"},
+                {"name": "Dimensional Blade"},
+                {"name": "Battle Sword"},
+                {"name": "Rune Sword"},
+                {"name": "Ancient Sword"},
+                {"name": "Espandon"},
+                {"name": "Dacian Falx"},
+                {"name": "Tusk Sword"},
+                {"name": "Gothic Sword"},
+                {"name": "Zweihander"},
+                {"name": "Executioner Sword"},
+                
+                {"name": "Falcata"},
+                {"name": "Ataghan"},
+                {"name": "Elegant Blade"},
+                {"name": "Hydra Edge"},
+                {"name": "Phase Blade"},
+                {"name": "Conquest Sword"},
+                {"name": "Cryptic Sword"},
+                {"name": "Mythical Sword"},
+                {"name": "Legend Sword"},
+                {"name": "Highland Blade"},
+                {"name": "Balrog Blade"},
+                {"name": "Champion Sword"},
+                {"name": "Colossus Sword"},
+                {"name": "Colossus Blade"}
+            ],
+            "Throwing":[
+                {"name": "Throwing Knife"},
+                {"name": "Balanced Knife"},
+                {"name": "Throwing Axe"},
+                {"name": "Balanced Axe"},
+                
+                {"name": "Battle Dart"},
+                {"name": "War Dart"},
+                {"name": "Francisca"},
+                {"name": "Hurlbat"},
+                
+                {"name": "Flying Knife"},
+                {"name": "Winged Knife"},
+                {"name": "Flying Axe"},
+                {"name": "Winged Axe"}
+            ],
+            "Wands": [
+                {"name": "Wand"},
+                {"name": "Yew Wand"},
+                {"name": "Bone Wand"},
+                {"name": "Grim Wand"},
+                
+                {"name": "Burnt Wand"},
+                {"name": "Petrified Wand"},
+                {"name": "Tomb Wand"},
+                {"name": "Grave Wand"},
+                
+                {"name": "Polished Wand"},
+                {"name": "Ghost Wand"},
+                {"name": "Lich Wand"},
+                {"name": "Unearthed Wand"}
+            ]
+        }
     }
 }
