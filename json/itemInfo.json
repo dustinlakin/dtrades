@@ -418,7 +418,7 @@
                     {"name": ""},
                     {"name": ""},
                     {"name": ""},
-                    {"name": ""},
+                    {"name": ""}
                 ]
             }
         ],
@@ -445,9 +445,6 @@
                     {"name": "Rainbow Facet"}
                 ]
             }
-        ],
-        "Rune": [
-            {"name": "Rune"}
         ],
         "Belt": [
             {"name": "Sash"},
@@ -485,7 +482,7 @@
             {"name": "Scarabshell Boots"},
             {"name": "Boneweave Boots"},
             {"name": "Mirrored Boots"},
-            {"name": "Myrmidon Greaves"},
+            {"name": "Myrmidon Greaves"}
         ],
         "Armor": [
             {"name": "Quilted Armor"},
@@ -537,13 +534,13 @@
             {"name": "Sacred Armor"}
         ],
         "Gem":[
-            "Amethyst",
-            "Diamond",
-            "Emerald",
-            "Ruby",
-            "Sapphire",
-            "Skull",
-            "Topaz"
+            {"name":"Amethyst"},
+            {"name":"Diamond"},
+            {"name":"Emerald"},
+            {"name":"Ruby"},
+            {"name":"Sapphire"},
+            {"name":"Skull"},
+            {"name":"Topaz"}
         ],
         "Gloves": [
             {"name": "Leather Gloves"},
@@ -693,42 +690,42 @@
             {"name": "Succubus Skull"},
             {"name": "Bloodlord Skull"}
         ],
-        "Runes":[
-            "El",
-            "Eld",
-            "Tir",
-            "Nef",
-            "Eth",
-            "Ith",
-            "Tal",
-            "Ral",
-            "Ort",
-            "Thul",
-            "Amn",
-            "Sol",
-            "Shael",
-            "Dol",
-            "Hel",
-            "Io",
-            "Lum",
-            "Ko",
-            "Fal",
-            "Lem",
-            "Pul",
-            "Um",
-            "Mal",
-            "Ist",
-            "Gul",
-            "Vex",
-            "Ohm",
-            "Lo",
-            "Sur",
-            "Ber",
-            "Jah",
-            "Cham",
-            "Zod"
+        "Rune":[
+            {"name": "El"},
+            {"name": "Eld"},
+            {"name": "Tir"},
+            {"name": "Nef"},
+            {"name": "Eth"},
+            {"name": "Ith"},
+            {"name": "Tal"},
+            {"name": "Ral"},
+            {"name": "Ort"},
+            {"name": "Thul"},
+            {"name": "Amn"},
+            {"name": "Sol"},
+            {"name": "Shael"},
+            {"name": "Dol"},
+            {"name": "Hel"},
+            {"name": "Io"},
+            {"name": "Lum"},
+            {"name": "Ko"},
+            {"name": "Fal"},
+            {"name": "Lem"},
+            {"name": "Pul"},
+            {"name": "Um"},
+            {"name": "Mal"},
+            {"name": "Ist"},
+            {"name": "Gul"},
+            {"name": "Vex"},
+            {"name": "Ohm"},
+            {"name": "Lo"},
+            {"name": "Sur"},
+            {"name": "Ber"},
+            {"name": "Jah"},
+            {"name": "Cham"},
+            {"name": "Zod"}
         ],
-        "Weapons": {
+        "Weapon": {
             "Axes" :
             [
                 {"name": "Hand Axe"},
@@ -799,9 +796,9 @@
                 {"name": "Ceremonial Bow"},
                 
                 {"name": "Matriarchal Bow"},
-                {"name": "Grand Matron Bow"},
+                {"name": "Grand Matron Bow"}
             ],
-            "CrossBows":[
+            "Crossbows":[
                 {"name": "Light Crossbow"},
                 {"name": "Crossbow"},
                 {"name": "Heavy Crossbow"},
@@ -815,7 +812,7 @@
                 {"name": "Pellet Bow"},
                 {"name": "Gorgon Crossbow"},
                 {"name": "Colossus Crossbow"},
-                {"name": "Demon Crossbow"},
+                {"name": "Demon Crossbow"}
             ],
             "Daggers":[
                 {"name": "Dagger"},
@@ -1018,7 +1015,7 @@
                 {"name": "Stalagmite"},
                 {"name": "Elder Staff"},
                 {"name": "Shillelagh"},
-                {"name": "Archon Staff"},
+                {"name": "Archon Staff"}
             ],
             "Swords":[
                 {"name": "Short Sword"},

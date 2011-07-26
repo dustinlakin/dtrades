@@ -84,6 +84,7 @@ div.qualHolder:hover{
     opacity:1;
 }
 
+
 .qualLetter{
     color:black;
     width: 100%;
@@ -94,6 +95,11 @@ div.qualHolder:hover{
     color:black;
     width: 100%;
     opacity: .75;
+}
+
+
+.qualSelected{
+    opacity: 1;
 }
 
 #White{

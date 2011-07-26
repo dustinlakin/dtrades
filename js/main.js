@@ -30,42 +30,80 @@ function toggleDropdown(jQ){
    }
 }
 
-function showType(slot){
-    console.log(slot);
-    var choices = info.types[slot];
-    for(var i = 0; i<choices.length; i++){
-        $("#type_dropdown ul").append('<li id="'+ choices[i].name.replace(" ", "_") +'">'+ choices[i].name +'</li>')
-        //console.log(choices[i].name, choices.length);
-    }
-    $("#type").bind("click",function(){
-        toggleDropdown($("#type_dropdown"))
-    });
-    $("#type_dropdown").css("width",$("#type").css("width"));
-    $("#type_dropdown li").each(function(){
-        $(this).click(function(){
-            $("#type").html($(this).html());
-            $("#item").data("type",$(this).html());
-            toggleDropdown($("#type_dropdown"));
-        })
-    })
-    
-}
-
 $(document).ready(function(){
+    //setup the clicks for item types
+    $(".qualHolder").click(function(event){
+        console.log($('#'+event.currentTarget.id));
+        toggleQuality($('#'+event.currentTarget.id));
+        $("#item").data("quality",event.currentTarget.id);
+        setupSlot($("#slotSelect"));
+    });
     $.getJSON("json/itemInfo.json",function(data){
         info = data;
-        
+        html = '';
+        for(var i =0; i < info.stats.length; i++){
+            html += '<option value="test">'+ info.stats[i].id + ' - ' + info.stats[i].name + '</option>';
+        }
+        $("#slotSelect").html(html).chosen();
+        $("#typeSelect").chosen();
+        $("#typeSelect_chzn").hide();
     });
 });
 
-function step2(){
+function setupSlot(jQ){
     var html = '<option value=""></option>';
     for(var i = 0; i < info.slots.length; i++){
         html += '<option value="'+ info.slots[i]+'">'+info.slots[i]+'</option>';
     }
-    $("#itemSelect").html(html);
-    $("#itemSelect").chosen();
+    jQ.html(html).trigger("liszt:updated").change(function(){
+        $("#item").data("slot",$("#slotSelect").val());
+        selectType("typeSelect");
+    });
 }
 
+function selectType(id){
+    var quality = $("#item").data("quality");
+    var slot = $("#item").data("slot");
+    //console.log($("#item").data());
+    var items;
+    
+    switch (quality) {
+        case "Green":
+            //set
+            break;
+        case "Gold":
+            //unique
+            break;
+        default:
+            items = info.types[slot];
+            break;
+    }
+    
+    html = '<option value="test"></option>';
+    if(slot == "Weapon"){
+        var weapons = ["Axes","Bows","Crossbows","Daggers","Javelins","Katars","Maces","Orbs","Polearms","Scepters","Spears","Staves","Swords","Throwing","Wands"];
+        for(var w = 0; w < weapons.length; w++){
+            html += '<optgroup label="'+weapons[w]+'">';
+            items = info.types[slot][weapons[w]];
+            for(var i=0; i < items.length; i++){
+                html += '<option>' + items[i].name + '</option>';
+            }
+            html += '</optgroup>'
+        }
+    }else{
+        for(var i=0; i < items.length; i++){
+            html += '<option>' + items[i].name + '</option>';
+        }
+    }
+    
+    $("#"+id).html(html).trigger("liszt:updated");
+    $("#"+ id + "_chzn").fadeIn();
+}
 
-
+function toggleQuality(jQ){
+    if(!jQ.children("div").hasClass("qualSelected")){
+        $(".qualHolder").children("div").removeClass("qualSelected");
+        jQ.children("div").addClass("qualSelected");
+    }
+    $("#typeSelect_chzn").fadeOut();
+}

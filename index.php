@@ -69,8 +69,7 @@
                     <div class="qualLetter">R</div>
                 </div>
                 <div id="Green" class="qualHolder">
-                    <div class="qualLetter">S
-                    </div>
+                    <div class="qualLetter">S</div>
                 </div>
                 <div id="Gold" class="qualHolder">
                     <div class="qualLetter">U</div>
@@ -83,7 +82,13 @@
                 </div>
             </section>
             <br style="clear:both;"/><br style="clear:both;"/>
-                <select id="itemSelect" title="Choose an item type..." style="width:335px;" class="chzn-select">
+                <select id="slotSelect" title="Choose an item type..." style="width:335px;" class="chzn-select">
+                    <option value=""></option>
+                    <option value="1">test1</option>
+                    <option value="2">test2</option>
+                    <option value="3">test3</option>
+                </select>
+                <select id="typeSelect" title="Choose an item type..." style="width:335px;" class="chzn-select">
                     <option value=""></option>
                     <option value="1">test1</option>
                     <option value="2">test2</option>
