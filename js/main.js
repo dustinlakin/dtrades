@@ -18,7 +18,7 @@ function setupSlots(){
            $("#item").data("slot",$(this).html());
            toggleDropdown($("#slot_dropdown"));
            showType($(this).html());
-       }) 
+       })
     });
 }
 
@@ -31,12 +31,26 @@ function toggleDropdown(jQ){
 }
 
 $(document).ready(function(){
+    $("#addStat").click(addStat);
     //setup the clicks for item types
     $(".qualHolder").click(function(event){
         console.log($('#'+event.currentTarget.id));
         toggleQuality($('#'+event.currentTarget.id));
         $("#item").data("quality",event.currentTarget.id);
         setupSlot($("#slotSelect"));
+    });
+    $(".qualHolder").hover(function(){
+        html = colorToQuality($(this).attr("id"));
+        //console.log($(this).attr("id"));
+        $("#qualityText").html(html)
+    },
+    function(){
+       if(qual = $("#item").data("quality")){
+           qual = colorToQuality(qual);
+           $("#qualityText").html(qual);
+       }else{
+           $("#qualityText").html("Select Quality");
+       }
     });
     $.getJSON("json/itemInfo.json",function(data){
         info = data;
@@ -47,6 +61,7 @@ $(document).ready(function(){
         $("#slotSelect").html(html).chosen();
         $("#typeSelect").chosen();
         $("#typeSelect_chzn").hide();
+        $(".statSelect").chosen();
     });
 });
 
@@ -95,7 +110,6 @@ function selectType(id){
             html += '<option>' + items[i].name + '</option>';
         }
     }
-    
     $("#"+id).html(html).trigger("liszt:updated");
     $("#"+ id + "_chzn").fadeIn();
 }
@@ -106,4 +120,45 @@ function toggleQuality(jQ){
         jQ.children("div").addClass("qualSelected");
     }
     $("#typeSelect_chzn").fadeOut();
+}
+
+function addStat(){
+    var rand = Math.round(Math.random()*10000);
+    html = '<select id="select_'+rand+'" title="Choose an stat.." style="width:300px; float: left;" class="statSelect">';
+    for(var i =0; i < info.stats.length; i++){
+            html += '<option value="'+ info.stats[i].id + '">'+ info.stats[i].id + ' - ' + info.stats[i].name + '</option>';
+        }
+    html += '</select>\
+        <input id="text_'+ rand +'" type="text" style="width:25px;"/>';
+    $("#stats").append(html);
+    $("#select_"+rand).chosen();
+}
+
+function colorToQuality(color){
+    switch (color) {
+        case "White":
+            html = "Normal";
+            break;
+        case "Blue":
+            html = "Magical";
+            break;
+        case "Yellow":
+            html = "Rare";
+            break;
+        case "Green":
+            html = "Set";
+            break;
+        case "Gold":
+            html = "Unique";
+            break;
+        case "Orange":
+            html = "Crafted";
+            break;
+        case "Gray":
+            html = "Runeword";
+            break;
+        default:
+            break;
+    }
+    return html;
 }

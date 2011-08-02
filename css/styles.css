@@ -97,8 +97,29 @@ div.qualHolder:hover{
     opacity: .75;
 }
 
-
 .qualSelected{
+    opacity: 1;
+}
+
+#addStat{
+    color:white;
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+    line-height: 30px;
+    width:100px;
+    height:30px;
+    border: 1px solid white;
+    -moz-border-top-left-radius: 12px;
+    border-top-left-radius: 12px;
+    -moz-border-bottom-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #3c3c3c;
+    opacity: .7;
+}
+
+#addStat:hover{
     opacity: 1;
 }
 

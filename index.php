@@ -57,7 +57,7 @@
             <div class="title">diablotrad.es</div><div class="name">Lakk</div>
         </header>
         <section id="item">
-            <div class="sectionTitle">Select Quality</div>
+            <div id="qualityText" class="sectionTitle">Select Quality</div>
             <section id="quality">
                 <div id="White" class="qualHolder">
                     <div class="qualLetter">N</div>
@@ -82,18 +82,22 @@
                 </div>
             </section>
             <br style="clear:both;"/><br style="clear:both;"/>
-                <select id="slotSelect" title="Choose an item type..." style="width:335px;" class="chzn-select">
-                    <option value=""></option>
-                    <option value="1">test1</option>
-                    <option value="2">test2</option>
-                    <option value="3">test3</option>
-                </select>
-                <select id="typeSelect" title="Choose an item type..." style="width:335px;" class="chzn-select">
-                    <option value=""></option>
-                    <option value="1">test1</option>
-                    <option value="2">test2</option>
-                    <option value="3">test3</option>
-                </select>
+            <select id="slotSelect" title="Choose an item slot..." style="width:335px;" class="chzn-select">
+                <option value=""></option>
+                <option value="1">test1</option>
+                <option value="2">test2</option>
+                <option value="3">test3</option>
+            </select>
+            <select id="typeSelect" title="Choose an item type (leave blank for any)" style="width:335px;" class="chzn-select">
+                <option value=""></option>
+                <option value="1">test1</option>
+                <option value="2">test2</option>
+                <option value="3">test3</option>
+            </select>
+            <section id="stats">
+            </section>
+            <div id="addStat">Add Stat</div>
+            
             <br/>
         </section>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
