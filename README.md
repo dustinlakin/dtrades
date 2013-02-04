@@ -1,4 +1,4 @@
 dtrades
 =======
 
-A concept for "auction house" like trading in a web app
+A concept for "auction house" like trading in a web app for Diablo II
